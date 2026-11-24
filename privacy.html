@@ -48,7 +48,7 @@
   <li><b>中国大陆的节假日和调休</b>：<code>raw.githubusercontent.com</code>、<code>cdn.jsdelivr.net</code>（开源项目 holiday-cn 的数据），以及 <code>registry.npmmirror.com</code>（开源项目 chinese-days 的数据）。App 里还内置了一份，联网取不到时使用。</li>
   <li><b>其他国家和地区的公共假期</b>：<code>date.nager.at</code>（Nager.Date）、<code>calendar.google.com</code>（Google 公开的节假日日历）。</li>
   <li><b>你订阅的日历</b>：你在 App 里订阅的日历地址，例如内置目录里的赛程日历（<code>ics.fixtur.es</code>、<code>files-f1.motorsportcalendars.com</code>、<code>www.smartcalendars.ai</code> 等），或你自己填写的地址。</li>
-  <li><b>检测能否访问 Google</b>：打开日历页时访问一次 <code>www.google.com/generate_204</code>（一个空页面），只用来决定点开日程时用哪个搜索引擎。</li>
+  <li><b>检测能否访问 Google</b>：打开日历页时访问一次 <code>www.google.com/generate_204</code>（一个空页面，没连上再试一次），用来决定点开日程时用哪个搜索引擎，以及日历订阅目录里显示哪些日历：访问不了 Google 时，目录不显示只能从 Google 获取的日历，订阅的节假日改用上面的公共假期数据。月相在手机上计算，不联网。</li>
 </ul>
 
 <h2>3. 打开网页</h2>
@@ -102,7 +102,7 @@
   <li><b>Public holidays and make-up workdays in mainland China</b>: <code>raw.githubusercontent.com</code>, <code>cdn.jsdelivr.net</code> (data from the open-source project holiday-cn) and <code>registry.npmmirror.com</code> (data from the open-source project chinese-days). A copy is also built into the app for when these cannot be reached.</li>
   <li><b>Public holidays in other countries and regions</b>: <code>date.nager.at</code> (Nager.Date) and <code>calendar.google.com</code> (Google's public holiday calendars).</li>
   <li><b>Calendars you subscribe to</b>: the addresses of calendars you subscribe to in the app, such as the sports calendars in the built-in catalog (<code>ics.fixtur.es</code>, <code>files-f1.motorsportcalendars.com</code>, <code>www.smartcalendars.ai</code>, etc.) or addresses you enter yourself.</li>
-  <li><b>Checking whether Google is reachable</b>: when the calendar page opens, the app loads <code>www.google.com/generate_204</code> (an empty page) once, only to decide which search engine to use when you open an event.</li>
+  <li><b>Checking whether Google is reachable</b>: when the calendar page opens, the app loads <code>www.google.com/generate_204</code> (an empty page) once, trying once more if it fails, to decide which search engine to use when you open an event, and which calendars the subscription catalog shows: if Google is unreachable, the catalog hides calendars only available from Google, and subscribed holidays use the public holiday data above instead. Moon phases are calculated on your phone, without going online.</li>
 </ul>
 
 <h2>3. Opening web pages</h2>
